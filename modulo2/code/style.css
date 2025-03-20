@@ -1,0 +1,89 @@
+
+@font-face {
+    font-family: 'Love';
+    src: url('fonts/Lovely Valentine Sans.otf')
+    format('opentype'), url('fonts/Lovely Valentine Sans.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    font-family: serif; /* Estou tentando usar as três fontes
+    CSS web safe font combinations
+    */
+
+}
+body{
+    background-image: linear-gradient(to right,#042940, #005C53,#9FC131,#D6D58E);
+}
+main{
+    background-color: white;
+    width: 600px;
+    padding: 15px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px  #031a2962;
+    
+}
+h1{
+    color: #042940;
+    text-align: center;
+    text-shadow: 1ps 1px 1px #042940;
+    font-family: 'Love';
+}
+
+h2{
+    color: #005C53;
+    font-family: 'Love';
+}
+
+p{
+    text-align: justify;
+    text-indent: 20px;
+}
+.ex2{
+    background-color: lightgreen;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #042940;
+    display: inline-block;
+    margin: 15px;
+    line-height: 100px;
+}
+
+.ex2:hover{
+    background-color: #5bca27;
+}
+div > p{
+    display: none;
+}
+
+div:hover > p{
+    display: block;
+}
+.cor{
+    text-align: center;
+
+}
+.cor:hover{
+    color: #005C53;
+}
+
+a{
+    color:#42921d;
+    text-decoration: none;
+}
+a:visited{
+    color: #042940;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    color: #D6D58E;
+}
+a::after{
+    content: ' [Link]';
+    color: #9FC131;
+}
